@@ -1,0 +1,1378 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\bookstore\settings.py changed, reloading.
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\bookstore\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\bookstore\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\bookstore\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET / HTTP/1.1" 500 136228
+Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET / HTTP/1.1" 500 136084
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /admin/ HTTP/1.1" 500 136207
+F:\PycharmProjects\PRO\bookstore\bookstore\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /admin/ HTTP/1.1" 500 136344
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /admin/ HTTP/1.1" 500 136344
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET / HTTP/1.1" 500 136228
+Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET / HTTP/1.1" 500 136084
+F:\PycharmProjects\PRO\bookstore\bookstore\settings.py changed, reloading.
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\bookstore\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET / HTTP/1.1" 500 136228
+Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 151, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\middleware.py", line 195, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 103, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 333, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\defaulttags.py", line 511, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET / HTTP/1.1" 500 136084
+F:\PycharmProjects\PRO\bookstore\bookstore\urls.py changed, reloading.
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\bookstore\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/login.html
+"GET /login/ HTTP/1.1" 500 94966
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/login.html
+"GET /login/ HTTP/1.1" 500 94821
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 30587
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14879
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4700
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/login.html
+"GET /login/ HTTP/1.1" 500 94966
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/login.html
+"GET /login/ HTTP/1.1" 500 94821
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/login.html
+"GET /login/ HTTP/1.1" 500 94821
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\users\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\PycharmProjects\PRO\bookstore\users\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET /admin/ HTTP/1.1" 200 22966
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET /register HTTP/1.1" 301 0
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PycharmProjects\PRO\bookstore\users\views.py", line 15, in register
+    return render(request, 'user/register.html', {'form': form})
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PycharmProjects\PRO\bookstore\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user/register.html
+"GET /register/ HTTP/1.1" 500 95889
+F:\PycharmProjects\PRO\bookstore\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 1510
+"GET /admin/ HTTP/1.1" 200 22966
+"GET /admin/auth/group/ HTTP/1.1" 200 25366
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/2/change/ HTTP/1.1" 200 27639
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"POST /admin/auth/group/2/change/ HTTP/1.1" 302 0
+"GET /admin/auth/group/ HTTP/1.1" 200 25563
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/3/change/ HTTP/1.1" 200 27618
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/group/3/change/ HTTP/1.1" 302 0
+"GET /admin/auth/group/ HTTP/1.1" 200 25560
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET /admin/ HTTP/1.1" 200 23654
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET /register/ HTTP/1.1" 200 1510
+Watching for file changes with StatReloader
+/app/bookstore/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/bookstore/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/bookstore/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/bookstore/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/bookstore/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3327
+"GET /login/ HTTP/1.1" 200 609
+Watching for file changes with StatReloader
+/app/shop/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/models.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/models.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3327
+"POST /login/ HTTP/1.1" 200 766
+"POST /login/ HTTP/1.1" 200 766
+"POST /login/ HTTP/1.1" 200 766
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"POST /login/ HTTP/1.1" 200 766
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 200 8658
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+"GET /static/admin/css/base.css HTTP/1.1" 200 23100
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+"GET /admin/shop/order/ HTTP/1.1" 200 9677
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+Not Found: /shop/order/
+"GET /shop/order/ HTTP/1.1" 404 5588
+Not Found: /order/
+"GET /order/ HTTP/1.1" 404 3312
+"GET /admin/shop/order/ HTTP/1.1" 200 9677
+"GET /admin/shop/order/ HTTP/1.1" 200 9677
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/shop/order/add/ HTTP/1.1" 200 16106
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8831
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /shop/orders/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 141, in my_orders
+    return render(request, 'shop/my_orders.html', {'orders': orders})
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/my_orders.html
+"GET /shop/orders/ HTTP/1.1" 500 78373
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /shop/orders/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 141, in my_orders
+    return render(request, 'shop/my_orders.html', {'orders': orders})
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/my_orders.html
+"GET /shop/orders/ HTTP/1.1" 500 78373
+Internal Server Error: /shop/orders/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 141, in my_orders
+    return render(request, 'shop/my_orders.html', {'orders': orders})
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/my_orders.html
+"GET /shop/orders/ HTTP/1.1" 500 78510
+Internal Server Error: /shop/orders/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 141, in my_orders
+    return render(request, 'shop/my_orders.html', {'orders': orders})
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/my_orders.html
+"GET /shop/orders/ HTTP/1.1" 500 78510
+"GET /shop/orders/ HTTP/1.1" 200 95
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/orders/ HTTP/1.1" 200 96
+Not Found: /shop/my_orders/
+"GET /shop/my_orders/ HTTP/1.1" 404 5863
+"GET /shop/cancel HTTP/1.1" 301 0
+"GET /shop/cancel/ HTTP/1.1" 200 31
+Not Found: /shop/successl/
+"GET /shop/successl/ HTTP/1.1" 404 5860
+"GET /shop/success/ HTTP/1.1" 200 27
+Not Found: /shop/cart/
+"GET /shop/cart/ HTTP/1.1" 404 5848
+Not Found: /cart/
+"GET /cart/ HTTP/1.1" 404 3309
+Internal Server Error: /shop/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 107, in checkout
+    session = stripe.checkout.Session.create(
+        payment_method_types=["card"],
+    ...<3 lines>...
+        cancel_url="http://localhost:8000/cancel/",
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/checkout/_session.py", line 2573, in create
+    cls._static_request(
+    ~~~~~~~~~~~~~~~~~~~^
+        "post",
+        ^^^^^^^
+        cls.class_url(),
+        ^^^^^^^^^^^^^^^^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 171, in _static_request
+    return _APIRequestor._global_instance().request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method_,
+        ^^^^^^^^
+    ...<3 lines>...
+        base_address=base_address,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 212, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 901, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 353, in handle_error_response
+    raise err
+stripe._error.AuthenticationError: Invalid API Key provided: sk_test_*****xxxx
+"GET /shop/checkout/ HTTP/1.1" 500 93548
+"GET /shop/success/ HTTP/1.1" 200 27
+"GET /shop/ HTTP/1.1" 200 765
+"GET /shop/orders/ HTTP/1.1" 200 383
+Not Found: /shop/cart/
+"GET /shop/cart/ HTTP/1.1" 404 5848
+Not Found: /shop/cart/
+"GET /shop/cart/ HTTP/1.1" 404 5848
+"GET /shop/create/ HTTP/1.1" 200 2156
+"GET /shop/ HTTP/1.1" 200 765
+"GET /shop/create/ HTTP/1.1" 200 2156
+"GET /admin/ HTTP/1.1" 200 8658
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /admin/shop/book/ HTTP/1.1" 200 10980
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 200 607
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/shop/book/add/ HTTP/1.1" 200 17038
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /admin/shop/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 11414
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 651
+"POST /admin/shop/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 327
+"GET /static/admin/js/popup_response.js HTTP/1.1" 200 532
+"POST /admin/shop/book/add/ HTTP/1.1" 200 17508
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/shop/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 11414
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/shop/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 332
+"GET /admin/shop/category/2/change/?_to_field=id&_popup=1 HTTP/1.1" 200 11462
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/shop/book/add/ HTTP/1.1" 302 0
+"GET /admin/shop/book/ HTTP/1.1" 200 14445
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+"GET /shop/orders/ HTTP/1.1" 200 383
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /shop/cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/shop/views.py", line 148, in cart_view
+    'items': cart.items()
+             ^^^^^^^^^^
+AttributeError: 'Cart' object has no attribute 'items'
+"GET /shop/cart/ HTTP/1.1" 500 58065
+Internal Server Error: /shop/cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/shop/views.py", line 148, in cart_view
+    'items': cart.items()
+             ^^^^^^^^^^
+AttributeError: 'Cart' object has no attribute 'items'
+"GET /shop/cart/ HTTP/1.1" 500 57921
+Internal Server Error: /shop/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 107, in checkout
+    session = stripe.checkout.Session.create(
+        payment_method_types=["card"],
+    ...<3 lines>...
+        cancel_url="http://localhost:8000/cancel/",
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/checkout/_session.py", line 2573, in create
+    cls._static_request(
+    ~~~~~~~~~~~~~~~~~~~^
+        "post",
+        ^^^^^^^
+        cls.class_url(),
+        ^^^^^^^^^^^^^^^^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 171, in _static_request
+    return _APIRequestor._global_instance().request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method_,
+        ^^^^^^^^
+    ...<3 lines>...
+        base_address=base_address,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 212, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 901, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 353, in handle_error_response
+    raise err
+stripe._error.AuthenticationError: Invalid API Key provided: sk_test_*****xxxx
+"GET /shop/checkout/ HTTP/1.1" 500 93548
+"GET /shop/orders/ HTTP/1.1" 200 722
+Internal Server Error: /shop/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 107, in checkout
+    session = stripe.checkout.Session.create(
+        payment_method_types=["card"],
+    ...<3 lines>...
+        cancel_url="http://localhost:8000/cancel/",
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/checkout/_session.py", line 2573, in create
+    cls._static_request(
+    ~~~~~~~~~~~~~~~~~~~^
+        "post",
+        ^^^^^^^
+        cls.class_url(),
+        ^^^^^^^^^^^^^^^^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 171, in _static_request
+    return _APIRequestor._global_instance().request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method_,
+        ^^^^^^^^
+    ...<3 lines>...
+        base_address=base_address,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 212, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 901, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 353, in handle_error_response
+    raise err
+stripe._error.AuthenticationError: Invalid API Key provided: sk_test_*****xxxx
+"GET /shop/checkout/ HTTP/1.1" 500 93548
+Internal Server Error: /shop/cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/shop/views.py", line 148, in cart_view
+    'items': cart.items()
+             ^^^^^^^^^^
+AttributeError: 'Cart' object has no attribute 'items'
+"GET /shop/cart/ HTTP/1.1" 500 58065
+Internal Server Error: /shop/cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/shop/views.py", line 148, in cart_view
+    'items': cart.items()
+             ^^^^^^^^^^
+AttributeError: 'Cart' object has no attribute 'items'
+"GET /shop/cart/ HTTP/1.1" 500 57921
+/app/bookstore/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/ HTTP/1.1" 200 957
+Internal Server Error: /shop/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 107, in checkout
+    session = stripe.checkout.Session.create(
+        payment_method_types=["card"],
+    ...<3 lines>...
+        cancel_url="http://localhost:8000/cancel/",
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/checkout/_session.py", line 2573, in create
+    cls._static_request(
+    ~~~~~~~~~~~~~~~~~~~^
+        "post",
+        ^^^^^^^
+        cls.class_url(),
+        ^^^^^^^^^^^^^^^^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 171, in _static_request
+    return _APIRequestor._global_instance().request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method_,
+        ^^^^^^^^
+    ...<3 lines>...
+        base_address=base_address,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 212, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 901, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 353, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_Vb0La8RJXK8o2j: The `line_items` parameter is required in payment mode.
+"GET /shop/checkout/ HTTP/1.1" 500 98533
+Internal Server Error: /shop/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/app/shop/views.py", line 107, in checkout
+    session = stripe.checkout.Session.create(
+        payment_method_types=["card"],
+    ...<3 lines>...
+        cancel_url="http://localhost:8000/cancel/",
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/checkout/_session.py", line 2573, in create
+    cls._static_request(
+    ~~~~~~~~~~~~~~~~~~~^
+        "post",
+        ^^^^^^^
+        cls.class_url(),
+        ^^^^^^^^^^^^^^^^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 171, in _static_request
+    return _APIRequestor._global_instance().request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method_,
+        ^^^^^^^^
+    ...<3 lines>...
+        base_address=base_address,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 212, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 901, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 353, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_BqbpioDwzB348e: The `line_items` parameter is required in payment mode.
+"GET /shop/checkout/ HTTP/1.1" 500 98389
+"GET /shop/cart/ HTTP/1.1" 200 61
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET //shop/cart/ HTTP/1.1" 200 61
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/checkout/ HTTP/1.1" 200 13
+"GET /shop/orders/ HTTP/1.1" 200 1741
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/checkout/ HTTP/1.1" 200 13
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/ HTTP/1.1" 200 957
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 609
+"GET /shop/ HTTP/1.1" 200 957
+"GET /shop/1/ HTTP/1.1" 200 677
+"GET /shop/checkout/ HTTP/1.1" 200 13
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/ HTTP/1.1" 200 957
+Not Found: /shop/admin
+"GET /shop/admin HTTP/1.1" 404 6104
+"GET /admin/ HTTP/1.1" 200 9723
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /admin/users/user/ HTTP/1.1" 200 13750
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/users/user/add/ HTTP/1.1" 200 14122
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"POST /admin/users/user/add/ HTTP/1.1" 200 14445
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/users/user/add/ HTTP/1.1" 302 0
+"GET /admin/users/user/2/change/ HTTP/1.1" 200 30089
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9159
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16428
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19698
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 304 0
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 2387
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+"GET /shop/ HTTP/1.1" 200 957
+"GET /shop/1/ HTTP/1.1" 200 677
+"GET /admin/shop/book/ HTTP/1.1" 200 14258
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/users/user/ HTTP/1.1" 200 14192
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+"GET /shop/cart/ HTTP/1.1" 200 61
+/app/shop/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/app/shop/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/checkout/ HTTP/1.1" 200 13
+Watching for file changes with StatReloader
+"GET /shop/ HTTP/1.1" 200 957
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/checkout/ HTTP/1.1" 200 13
+Watching for file changes with StatReloader
+"GET /shop/checkout/ HTTP/1.1" 200 13
+"GET /shop/cart/ HTTP/1.1" 200 61
+"GET /shop/1/ HTTP/1.1" 200 739
+"GET /shop/1/add-to-cart/ HTTP/1.1" 302 0
+"GET /shop/cart/ HTTP/1.1" 200 279
+"GET /shop/checkout/ HTTP/1.1" 302 0
+Watching for file changes with StatReloader
+"GET /shop/ HTTP/1.1" 200 1932
+Watching for file changes with StatReloader
