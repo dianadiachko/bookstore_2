@@ -16,6 +16,7 @@ from .models import Order
 from .cart import Cart
 from django.http import JsonResponse
 from .models import Book
+from .models import Favorite
 
 
 User = get_user_model()
@@ -23,6 +24,11 @@ User = get_user_model()
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 class BookListView(ListView):
+    """
+    Display list of books with search and filtering.
+
+    Generated with AI, reviewed and modified.
+    """
     model = Book
     template_name = "shop/book_list.html"
     context_object_name = "books"
@@ -49,11 +55,19 @@ class BookListView(ListView):
 
 
 class BookDetailView(DetailView):
+    """
+    Display book details.
+
+    Generated with AI, reviewed and modified.
+    """
     model = Book
     template_name = 'shop/book_detail.html'
 
 
 class BookCreateView(CreateView):
+    """
+    Creates a new book entry.
+    """
     model = Book
     template_name = 'shop/book_form.html'
     fields = '__all__'
@@ -61,6 +75,9 @@ class BookCreateView(CreateView):
 
 
 class BookUpdateView(UpdateView):
+    """
+    Updates an existing book.
+    """
     model = Book
     template_name = 'shop/book_form.html'
     fields = '__all__'
@@ -68,6 +85,9 @@ class BookUpdateView(UpdateView):
 
 
 class BookDeleteView(DeleteView):
+    """
+    Deletes a book.
+    """
     model = Book
     template_name = 'shop/book_confirm_delete.html'
     success_url = reverse_lazy('shop:list')
@@ -75,6 +95,11 @@ class BookDeleteView(DeleteView):
 
 @permission_required('shop.can_publish_book')
 def publish_book(request, pk):
+    """
+    Marks a book as available (published).
+
+    Requires special permission.
+    """
     book = get_object_or_404(Book, pk=pk)
     book.is_available = True
     book.save()
@@ -83,10 +108,31 @@ def publish_book(request, pk):
 
 @login_required
 def checkout(request):
+    """
+    Handle Stripe checkout.
+
+    Generated with AI, reviewed and modified.
+    """
     cart = Cart(request)
 
-    if len(cart) == 0:
+    items = list(cart)
+
+    if not items:
         return HttpResponse("Cart is empty")
+
+    line_items = []
+
+    for item in items:
+        line_items.append({
+            "price_data": {
+                "currency": "usd",
+                "product_data": {
+                    "name": item['book'].title,
+                },
+                "unit_amount": int(item['price'] * 100),
+            },
+            "quantity": item['quantity'],
+        })
 
     line_items = []
 
@@ -114,6 +160,11 @@ def checkout(request):
 
 
 def success(request):
+    """
+    Handles successful payment.
+
+    Creates order from cart and clears it.
+    """
     cart = Cart(request)
 
     order = cart.create_order(
@@ -125,29 +176,44 @@ def success(request):
 
 
 def cancel(request):
+    """
+    Handles cancelled payment.
+    """
     return HttpResponse("Оплата скасована")
 
 
 @login_required
 def add_favorite(request, pk):
+    """
+    Adds or removes a book from user's favorites.
+    """
     book = get_object_or_404(Book, pk=pk)
     user = request.user
 
-    if book in user.favorite_set.all():
-        user.favorite_set.remove(book)
-    else:
-        user.favorite_set.add(book)
+    favorite, created = Favorite.objects.get_or_create(
+        user=user,
+        book=book
+    )
+
+    if not created:
+        favorite.delete()
 
     return redirect('shop:detail', pk=pk)
 
 
 @login_required
 def my_orders(request):
+    """
+    Displays current user's orders.
+    """
     orders = Order.objects.filter(user=request.user)
     return render(request, 'shop/my_orders.html', {'orders': orders})
 
 
 def cart_view(request):
+    """
+    Displays shopping cart contents.
+    """
     cart = Cart(request)
 
     return render(request, 'shop/cart.html', {
@@ -158,6 +224,9 @@ def cart_view(request):
 
 @login_required
 def add_to_cart(request, pk):
+    """
+    Adds a book to the shopping cart.
+    """
     cart = Cart(request)
     book = get_object_or_404(Book, pk=pk)
 
@@ -168,6 +237,11 @@ def add_to_cart(request, pk):
 
 # список книг
 async def async_books(request):
+    """
+    Return books asynchronously.
+
+    Generated with AI, reviewed and modified.
+    """
     books = [book async for book in Book.objects.all()]
 
     return JsonResponse({
@@ -177,6 +251,9 @@ async def async_books(request):
 
 # деталі книги
 async def async_book_detail(request, pk):
+    """
+    Async view returning book details.
+    """
     book = await Book.objects.aget(pk=pk)
 
     return JsonResponse({
@@ -186,6 +263,9 @@ async def async_book_detail(request, pk):
 
 #  створення книги
 async def async_create_book(request):
+    """
+    Async view creating a book.
+    """
     book = await Book.objects.acreate(
         title="Async Book"
     )

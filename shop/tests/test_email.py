@@ -2,11 +2,11 @@ import pytest
 from django.contrib.sessions.backends.db import SessionStore
 from shop.tests.factories import BookFactory
 from shop.cart import Cart
-
+# Generated with AI, reviewed and modified
 
 @pytest.mark.django_db
 def test_order_sends_email(mocker, rf, user):
-    mock_send = mocker.patch("django.core.mail.send_mail")
+    mock_send = mocker.patch("shop.cart.send_mail")
 
     book = BookFactory()
 

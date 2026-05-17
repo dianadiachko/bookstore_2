@@ -1,6 +1,6 @@
 import factory
 from shop.models import Book, Category
-
+# Generated with AI, reviewed and modified
 
 class CategoryFactory(factory.django.DjangoModelFactory):
     class Meta:

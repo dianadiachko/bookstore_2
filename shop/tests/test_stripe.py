@@ -1,7 +1,8 @@
 import pytest
 from django.urls import reverse
 from shop.tests.factories import BookFactory
-
+from users.tests.factories import UserFactory
+# Generated with AI, reviewed and modified
 
 @pytest.mark.django_db
 def test_stripe_checkout(client, mocker):
@@ -14,6 +15,9 @@ def test_stripe_checkout(client, mocker):
         (),
         {"url": "http://test-checkout"}
     )
+
+    user = UserFactory()
+    client.force_login(user)
 
     book = BookFactory()
 

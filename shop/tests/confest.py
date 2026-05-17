@@ -1,5 +1,6 @@
 import pytest
 from django.contrib.auth import get_user_model
+# Generated with AI, reviewed and modified
 
 User = get_user_model()
 

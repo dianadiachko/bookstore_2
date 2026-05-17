@@ -1,5 +1,5 @@
 from shop.forms import BookForm
-
+# Generated with AI, reviewed and modified
 
 def test_book_form_valid():
     form = BookForm(data={

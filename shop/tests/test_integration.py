@@ -1,7 +1,7 @@
 import pytest
 from django.urls import reverse
 from shop.tests.factories import BookFactory
-
+# Generated with AI, reviewed and modified
 
 @pytest.mark.django_db
 def test_user_flow_add_to_cart(client, user):
