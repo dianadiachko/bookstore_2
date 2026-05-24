@@ -1,6 +1,11 @@
 import factory
 from shop.models import Book, Category
+from django.contrib.auth import get_user_model
+
 # Generated with AI, reviewed and modified
+
+User = get_user_model()
+
 
 class CategoryFactory(factory.django.DjangoModelFactory):
     class Meta:
@@ -8,6 +13,15 @@ class CategoryFactory(factory.django.DjangoModelFactory):
 
     name = factory.Sequence(lambda n: f"category-{n}")
     slug = factory.Sequence(lambda n: f"category-{n}")
+
+
+class UserFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = User
+
+    username = factory.Sequence(lambda n: f"user{n}")
+    password = factory.PostGenerationMethodCall("set_password", "test123")
+    is_staff = False
 
 
 class BookFactory(factory.django.DjangoModelFactory):
@@ -18,8 +32,7 @@ class BookFactory(factory.django.DjangoModelFactory):
 
     title = factory.Faker("sentence")
     author = factory.Faker("name")
-    price = factory.Faker("pydecimal", left_digits=3, right_digits=2, positive=True)
-
+    price = 10  # важливо
     description = factory.Faker("text")
     stock = 10
     year = 2024

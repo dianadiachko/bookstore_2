@@ -2,6 +2,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from django.views.generic import RedirectView
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 from shop.views import (
     async_books,
@@ -25,4 +30,10 @@ urlpatterns = [
     path('async/books/', async_books),
     path('async/books/<int:pk>/', async_book_detail),
     path('async/books/create/', async_create_book),
+    path("api/", include("shop.api_urls")),
+
+    path("api/token/", TokenObtainPairView.as_view()),
+    path("api/token/refresh/", TokenRefreshView.as_view()),
+    path("api/schema/", SpectacularAPIView.as_view()),
+    path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema")),
 ]
