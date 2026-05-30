@@ -17,6 +17,7 @@ from .cart import Cart
 from django.http import JsonResponse
 from .models import Book
 from .models import Favorite
+from django.http import JsonResponse
 
 
 User = get_user_model()
@@ -273,3 +274,7 @@ async def async_create_book(request):
     return JsonResponse({
         "id": book.id
     })
+
+
+def health(request):
+    return JsonResponse({"status": "ok"})

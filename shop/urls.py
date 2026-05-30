@@ -14,6 +14,9 @@ from .views import (
     cart_view,
     add_to_cart
 )
+from django.contrib import admin
+from django.urls import path
+from shop.views import health
 
 app_name = "shop"
 
@@ -30,4 +33,6 @@ urlpatterns = [
     path('orders/', my_orders, name='my_orders'),
     path('cart/', cart_view, name='cart'),
     path('<int:pk>/add-to-cart/', add_to_cart, name='add_to_cart'),
+    path('admin/', admin.site.urls),
+    path('health/', health),
 ]

@@ -1,12 +1,11 @@
 Django>=4.2
+
 stripe
 redis
 psycopg2-binary
 gunicorn
 Pillow
 celery
-redis
 django-celery-beat
 django-redis
 sentry-sdk
-gunicorn
