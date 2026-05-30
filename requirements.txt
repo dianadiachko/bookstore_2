@@ -10,3 +10,5 @@ django-celery-beat
 django-redis
 sentry-sdk
 python-dotenv
+djangorestframework
+djangorestframework-simplejwt
