@@ -1,9 +1,12 @@
 import os
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
+from celery.schedules import crontab
+import sentry_sdk
+#from sentry_sdk.integrations.django import DjangoIntegration
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # SECURITY
 SECRET_KEY = "your-super-long-secret-key-12345678901234567890"
@@ -175,3 +178,43 @@ REST_FRAMEWORK = {
         "anon": "1000/day",
     },
 }
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://redis:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+CELERY_BROKER_URL = "redis://redis:6379/0"
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+
+
+CELERY_BEAT_SCHEDULE = {
+    "cleanup-sessions": {
+        "task": "shop.tasks.cleanup_sessions",
+        "schedule": crontab(hour=0, minute=0),
+    },
+}
+
+SENTRY_DSN = os.getenv("SENTRY_DSN")
+
+if SENTRY_DSN:
+    sentry_sdk.init(
+        dsn=SENTRY_DSN,
+        traces_sample_rate=1.0,
+    )
+
+try:
+    import sentry_sdk
+
+    sentry_sdk.init(
+        dsn="your_dsn_here",
+        traces_sample_rate=1.0,
+    )
+except ImportError:
+    pass

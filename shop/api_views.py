@@ -2,6 +2,8 @@ from rest_framework import viewsets, permissions
 from .models import Book, Category, Order
 from .serializers import BookSerializer, CategorySerializer, OrderSerializer
 from .permissions import IsOwnerOrReadOnly
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 
 
 class BookViewSet(viewsets.ModelViewSet):
@@ -29,3 +31,8 @@ class OrderViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         return [permissions.IsAuthenticated(), IsOwnerOrReadOnly()]
+
+
+@method_decorator(cache_page(60 * 5))
+def list(self, request, *args, **kwargs):
+    return super().list(request, *args, **kwargs)
